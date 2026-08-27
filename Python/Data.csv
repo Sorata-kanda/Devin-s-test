@@ -1,0 +1,7 @@
+﻿Name,Age,Gender,Country,Salary,Purchased
+John,28,Male,USA,50000,Yes
+Anna,22,Female,UK,60000,No
+Mike,32,Male,USA,58000,Yes
+Sara,27,Female,UK,52000,No
+Dave,,Male,India,45000,Yes
+Latika,35,Female,India,,No
