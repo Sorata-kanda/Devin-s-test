@@ -15,3 +15,24 @@ for(let i=0; i<arr.length; i++){
     console.log(`${arr[i]} index : ${i}`);
     
 }
+
+
+// Write an arrow function that returns the  square for a number n
+
+let sq = (n) => {
+    console.log(n*n);
+}
+
+sq(4);
+
+
+// Write a fn that print "Hello world" 5 times at interval of 2 sec
+let counter = 1;
+let id = setInterval(() => {
+    if(counter>=5){
+        clearInterval(id);
+    }
+    console.log("Hello world");
+    counter++;
+    
+},1000);

@@ -260,38 +260,319 @@ console.log(randomiser);
 
 //--------------------------------------- Guessing game ---------------------------------------------
 
-let question = prompt("Eanter a range");
-let lucky_number = Math.floor(Math.random() * question) +1;
-console.log(lucky_number);
-if(question <= 40){
-    while (true) {
-        if (question != lucky_number) {
-            question = prompt("Try again the match is incorrect");
-        }
-        if (question === "quit") {
-            alert("You lose.\n Exiting the game.....");
-            break;
-        }if(question === lucky_number) {
-            alert("You won! ");
-            break;
-        }
-    }
-}else if(question >40){
-    let hint1 = Math.floor(lucky_number / 4); 
+// let question = prompt("Eanter a range");
+// let lucky_number = Math.floor(Math.random() * question) +1;
+// console.log(lucky_number);
+// if(question <= 40){
+//     while (true) {
+//         if (question != lucky_number) {
+//             question = prompt("Try again the match is incorrect");
+//         }
+//         if (question === "quit") {
+//             alert("You lose.\n Exiting the game.....");
+//             break;
+//         }if(question === lucky_number) {
+//             alert("You won! ");
+//             break;
+//         }
+//     }
+// }else if(question >40){
+//     let hint1 = Math.floor(lucky_number / 4); 
 
-    while (true) {
-        if (question != lucky_number) {
-            question = prompt(`Try again the match is incorrect. \n Your hint: ${hint1}`);
+//     while (true) {
+//         if (question != lucky_number) {
+//             question = prompt(`Try again the match is incorrect. \n Your hint: ${hint1}`);
 
-        }
-        if (question === "quit") {
-            alert("You lose.\n Exiting the game.....");
-            break;
-        }if(question === lucky_number) {
-            alert("You won! ");
-            break;
-        }
+//         }
+//         if (question === "quit") {
+//             alert("You lose.\n Exiting the game.....");
+//             break;
+//         }if(question === lucky_number) {
+//             alert("You won! ");
+//             break;
+//         }
+//     }
+// }
+
+// alert(`Your luck number is: ${lucky_number}`);
+
+
+
+//--------------------------------------- Funcitons ---------------------------------------------
+
+
+function poem(){
+    console.log("Preety little baby yeah yeah");
+}
+function avg_finder(a,b,c){
+    let avgg = (a+b+c)/3;
+    console.log(avgg);
+}
+
+function table(a){
+    for(let i=1; i<=10;i++){
+        console.log(`${a} x ${i} = ${a*i}`)
     }
 }
 
-alert(`Your luck number is: ${lucky_number}`);
+poem();
+avg_finder(10,20,30);
+table(5);
+
+
+
+//--------------------------------------- Return Funcitons ---------------------------------------------
+
+function summer(a){
+    let sum = 0;
+    for(let i=0; i<a; i++){
+        sum = sum+i;     
+    }
+    return sum;
+}
+
+function strSum(ary){
+    let jointStr="";
+    for(let i=0; i<ary.length; i++){
+        jointStr += ary[i]+ " ";
+        
+    }
+    
+    return jointStr.trim();
+}
+let ary = ["Hi", "Hello", "Bye", "Fk u"];
+
+console.log(summer(10));
+console.log(strSum(ary));
+
+
+//--------------------------------------- Methods ---------------------------------------------
+
+const method1 = {
+    addition : function(a,b){
+        return (a+b);
+    },sub : function(a,b){
+        return (a-b);
+    },mul : function(a,b){
+        return (a*b);
+    },
+}
+
+console.log(method1.sub(10,20));
+
+
+//--------------------------------------- this keyword ---------------------------------------------
+
+const stud2 = {
+    name: "Rahul",
+    Dream: "M8 gran coupe",
+    age: 19,
+    eng : 90,
+    maths: 100,
+    sci:100,
+    finderr: function finder(a,b){
+        console.log((this.eng + this.maths + this.sci)/3);
+        console.log(`fucking ${a} and ${b}`);
+    }
+
+}
+
+stud2.finderr(10,10);
+
+
+//--------------------------------------- try/catch ---------------------------------------------
+
+
+try{
+    console.log(stud2.name +" wants "+ stud2.Dream);
+    throw ("dream not affordable");
+}catch(e){
+    console.log(e);
+}
+
+
+//--------------------------------------- Arrow functions ---------------------------------------------
+
+const arow1 = (a,b) => {
+    console.log(a+b);
+}
+arow1(9,10);
+
+
+// ------------------------------------ Implicit arrow function:- 
+
+const arow2 =  (a,b) =>(
+    a*b
+);
+
+console.log(arow2(10,20));
+
+
+
+//--------------------------------------- Set Timeout ---------------------------------------------
+
+// setTimeout(() => {console.log("Fukers")}, 1000);
+// console.log("I hate :- \n");
+
+// const ranAry = ["I hate", "Fukers", "You knew that", "didn't you?",".....", "YET", "You still fuked up", "You little bastard", "You will pay for this", "For sure", "!!"];
+// for(let i=0;i<ranAry.length; i++){
+//     setTimeout(() => {
+//         console.log(ranAry[i],"\n");
+//     },1500*(i+1));
+// }
+
+
+
+
+// const coustmerDetails = {
+//     coust1 : { name: "Rahul", orderid: 2022, delivery: "ongoing"},
+//     coust2 : { name: "bhavani", orderid: 2023, delivery: "About to be delivered"},
+//     coust3 : { name: "Shivangi", orderid: 2024, delivery: "In Progegress"},
+// }
+
+
+// let counter = 1;
+// for(key in coustmerDetails){
+//     let cust = coustmerDetails[key];
+
+//     setTimeout((CoustmerName, OrderID, DeliveryStatus) => {
+//         console.log(`👤 Customer: ${CoustmerName}`);
+//         console.log(`   Order #: ${OrderID}`);
+//         console.log(`   Status: ${DeliveryStatus}`);
+//         console.log(" ");
+//     }, 3000 * (counter +1), cust.name, cust.orderid, cust.delivery);
+//     counter ++;
+// }
+
+
+
+//--------------------------------------- Set Interval ---------------------------------------------
+
+// let c = 1
+// const timer = setInterval(() => {
+//     console.log(c);
+//     c++;
+//     if (c>10){
+//         clearInterval(timer);
+//         console.log("out of timer");
+//     }
+// },1500);
+
+
+
+//--------------------------------------- this for arrow function ---------------------------------------------
+
+const fn = {
+    name : "Tokisawa",
+    getname : function(){
+        console.log(this.name);  // obj is the parent! so this belong to obj name
+    },
+
+    getname2 : () =>{console.log(fn.name)},  // here it's the lexical scope, have the same scope as the [parent] that is (window)
+}
+fn.getname();
+fn.getname2();
+
+
+
+// ------------------------------------ For each loop :-    [SUS]
+
+let ary2 = [1,2,3,4,5,6,6];
+let printed = function(el){
+    console.log(el);
+}
+ary2.forEach(printed);
+
+
+
+// ------------------------------------ Map :- apply function on every element of array
+
+
+let numm = [1,2,3,4,5,6,7];
+let double = numm.map((el) => {
+    return 2*el;
+});
+
+console.log(double);
+
+
+let studentes = [
+    {
+        name: "Rahul",
+        age: 19,
+        marks: 95,
+    },
+    {
+        name : "rt2",
+        age: 20,
+        marks: 92,
+    },
+    {
+        name: "rt3",
+        age : 21,
+        marks: 97,
+    }
+]
+
+let GPA = studentes.map((el) => {
+    return el.marks/10;
+})
+
+console.log(GPA);
+
+
+// ------------------------------------ filter :- [send's the new array]
+
+let ans = numm.filter((el) =>{
+    return el%2 == 0;
+})
+
+console.log(`All must be even and this a new arr : ${ans}\n meanwhile real array : ${numm}`);
+
+
+// ------------------------------------ every :- sends true if all the elements of an arrya sends true
+
+let checker = ans.every((el) => (el%2 == 0));
+let checker2= numm.every((el) => (el%2 == 0));
+
+
+console.log(checker);
+console.log(checker2);
+
+// --------------------------------- Reduce function: reduce the array into a single value ----------------------------------------
+
+let acc = numm.reduce((res, el) =>{
+    return res+el;
+})
+
+
+
+// Q -> find max in an array using reduce funciton
+
+let QArr = [1,1,23, 2, 10, 5, 2, 100]
+
+let maxi = QArr.reduce((res,el) =>{
+    if (el>res){
+        return el;
+    }else{
+        return res;
+    }
+})
+
+console.log(maxi);
+
+// Q -> check if every element in out array is a multiple of 10 or not
+
+let checker12 = [10,20,30,40,50];
+console.log(checker12.every((el) => el%10 == 0))
+
+// Q ->     create the function to find the min number in an array
+
+let brum = checker12.reduce((res,el) => {
+    if(el<res){
+        return el;
+    }else{
+        return res;
+    }
+} );
+console.log(`The min ele shoud be: ${brum}`)
