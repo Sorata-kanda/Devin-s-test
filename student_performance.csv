@@ -1,0 +1,51 @@
+Student_ID,Gender,Age,Study_Hours,Attendance (%),Test_Score,Parental_Education,Internet_Access,Extra_Classes
+1,Male,17,5.8,61.3,72,Postgraduate,No,No
+2,Female,16,4.9,85.5,40,Graduate,Yes,Yes
+3,Male,17,,72.6,58,High School,No,No
+4,Male,18,5.5,80.3,41,Postgraduate,No,Yes
+5,Male,17,4,96.3,92,High School,No,No
+6,Female,18,5.6,70,83,High School,No,Yes
+7,Male,18,1.4,76.4,65,Graduate,No,No
+8,Male,15,2,90.2,71,Postgraduate,Yes,Yes
+9,Male,17,1.2,69.2,45,Postgraduate,Yes,Yes
+10,Female,15,2.6,,71,Graduate,Yes,No
+11,Male,17,2.9,71.6,94,Graduate,No,Yes
+12,Male,17,2.4,66.4,43,Postgraduate,Yes,Yes
+13,Male,15,5.1,97.2,94,Postgraduate,No,No
+14,Male,15,2.8,,50,Graduate,No,Yes
+15,Female,17,2.4,85.3,95,High School,Yes,Yes
+16,Male,16,3.7,94.9,98,High School,Yes,Yes
+17,Female,18,1.7,92.1,56,Graduate,No,No
+18,Female,15,5,67.5,77,High School,Yes,Yes
+19,Female,18,1.4,95.7,63,Graduate,No,No
+20,Male,16,5.9,81.6,44,High School,No,Yes
+21,Female,16,,92.3,91,High School,No,Yes
+22,Male,16,2,95.8,73,Postgraduate,No,Yes
+23,Female,15,1,72.7,45,Postgraduate,No,No
+24,Female,16,5.1,,61,High School,Yes,Yes
+25,Female,15,4.5,69.1,50,High School,Yes,Yes
+26,Female,16,4.6,77.1,87,Postgraduate,No,No
+27,Female,18,4.9,92.7,55,Postgraduate,No,Yes
+28,Female,18,1.4,94.4,72,Postgraduate,Yes,No
+29,Female,17,2.8,60.3,48,Graduate,Yes,No
+30,Female,18,1.6,80.4,99,High School,No,Yes
+31,Male,17,5.3,76.7,98,Postgraduate,Yes,No
+32,Male,18,,68.9,45,High School,No,Yes
+33,Female,15,2.7,64.8,55,Graduate,Yes,No
+34,Female,18,1.3,73.5,68,Graduate,No,No
+35,Female,17,2.6,97.7,42,Postgraduate,Yes,Yes
+36,Male,17,2.6,72.9,59,Graduate,No,No
+37,Female,16,4.6,80.8,99,High School,Yes,No
+38,Male,15,4.2,,98,Postgraduate,Yes,No
+39,Male,18,5.4,74.5,75,High School,No,No
+40,Male,16,3.4,98.9,58,High School,Yes,No
+41,Male,18,1.6,98.5,65,Graduate,No,Yes
+42,Male,18,4.6,70.1,42,Graduate,Yes,No
+43,Female,16,4.8,,58,Graduate,No,Yes
+44,Female,16,3.8,72,59,Graduate,Yes,No
+45,Female,16,4.9,71.4,71,Graduate,No,Yes
+46,Female,16,3.5,61.5,46,Postgraduate,Yes,Yes
+47,Female,16,,84.4,91,High School,No,No
+48,Male,18,,80.1,80,High School,Yes,No
+49,Female,16,1.1,62.1,72,High School,No,No
+50,Female,15,1.5,71.1,79,High School,No,Yes

@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(13, 13, 14);
+    color: white;
+}
+
+button {
+    background-color: #007ff6;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #3e91fd;
+}
+.posts {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    align-self: stretch;
+}
+
+.post-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-card p {
+    margin: 6px 0 0 0;
+}

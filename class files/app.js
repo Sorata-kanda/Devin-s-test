@@ -576,3 +576,71 @@ let brum = checker12.reduce((res,el) => {
     }
 } );
 console.log(`The min ele shoud be: ${brum}`)
+
+
+// -------------------------------------- Default parameter :- 
+
+function sum(a,b=9){
+    console.log(`The sum of a: ${a}, ${b} :- ${a+b}`);
+}
+
+sum(9);
+
+
+// -------------------------------------- spread :- 
+// we don't need to write the every value/ element of data structure
+
+let arr = [2,3,4,4,5,1,6,7,8,9]
+let test1 = Math.min(...arr);
+console.log(test1);
+// we can also copy it
+
+let test2 = [...arr];
+console.log(test2);
+
+// or we can break a string in chars
+
+let str2 = "Rahul Jangra";
+let test3 = [...str2];
+console.log(test3);
+
+let str3 = "1234567890";
+let t4 = [...str3];
+t4 = t4.map((el) => Number(el));
+console.log(t4);
+
+
+
+// with object litreals
+
+let data = {
+    std1 : {name : "Rahul", email: "jangraboy.nature@gmail.com"},
+    std2 : {name : "Rahul2", email: "rahuljan.codes@gmail.com"},
+    std3 : {name : "Rahul3", email: "fboy61478@gmail.com"},
+}
+console.log(data);
+
+let data2 = {...data, std4:{id:200}};
+console.log("\nThis is data2:", data2);
+
+
+// -------------------------------------- rest :- 
+
+sum = function(...args){
+    return args.reduce((accu,el) => accu+el);
+}
+
+console.log(`The sum function is not updated: ${sum(1,2,3)}`);
+
+
+// ----------------------------------- Destructring :-
+
+let strArr = ["Tony", "Michael", "Stark", "Tishar", "Rahul"];
+
+let [winner, scdWinner, RunnerUp] = strArr;
+console.log(`now these are new variables but the array is destructured: \n${winner} ${RunnerUp} ${scdWinner}`)
+
+
+let {std1: name ,std2: {email}} = data;  // Difference between std1 and std2 is major
+console.log(name);
+console.log(email);

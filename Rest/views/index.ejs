@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Blue Whale Posts</h1>
+    <% for(let post of posts){ %>
+        <div class="main">
+            <h2 class="user">@ <%=post.user%></h2>
+            <h4>Post id: <%=post.id%> </h4>
+            <h4 class="content"><%=post.content%></h4>
+            <a href="/posts/<%=post.id%>"><button>Show in detail</button></a>
+            <a href="/posts/<%=post.id%>/edit"><button>Edit</button></a>
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                <button>Delete</button>
+            </form>
+        </div>
+        
+    <%  }%>
+
+    
+    <a href="/posts/new"><button class="Creater">Create new Post</button></a>
+    <script src="/js/index.js"></script>
+</body>
+</html>

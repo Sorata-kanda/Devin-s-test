@@ -1,0 +1,42 @@
+<%- include("include/head.ejs") %> 
+    <body>
+        <div class="main">
+            <h1>Username: @ <%= user %></h1>
+            <button class="follow">Follow</button>
+            <button class="message">Message</button>
+        </div>
+        
+
+        <h2>Your Followers list:</h2>
+        <ol>
+            <% for(let name of followers){ %> 
+                <li><%=name%></li>
+            <% } %> 
+
+        </ol>
+
+        <h1>Additional details:</h1>
+        <% if(!data){ %> 
+            <h2> There is no additional information on the user</h2>
+        <% } else{%>
+            <h2>Account holder: <%= data.name%></h2>
+            <p>Followers: <%= data.followers%> &nbsp;&nbsp;&nbsp;&nbsp; Following: <%= data.following%></p>
+            <hr>
+            <div class="posts">
+                <% for(let img of data.posts) {%>
+                    <div class="post-card">
+                        <img src="<%=img.image%>" alt="<%= user %> account image">
+                        <p>Likes: <%= img.likes%> &nbsp;&nbsp;&nbsp;&nbsp; Comments: <%= img.comments%></p>
+                    </div>
+                <% } %>  
+            </div>  
+        <% }%>  
+        
+
+    </body>
+    <script>
+        const username = "<%= user %>";
+    </script>
+    <script src="/app.js"></script>
+
+</html>

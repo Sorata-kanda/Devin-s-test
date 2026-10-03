@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    color: rgb(0, 94, 255);
+}
+.main{
+    background-color: #7D8BA0;
+    width: 75%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.user{
+    font-style: italic;
+    text-decoration: underline;
+}
+.content{
+    margin-left: 50px;
+}
+
+.Creater{
+    background-color:cornsilk;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.Creater:hover{
+    transition: 0.1s ease-in;
+    background-color: rgb(255, 232, 185);
+    
+}
+
+button{
+    background-color: rgb(38, 38, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+
+}
+
+button:hover{
+    background-color: rgb(72, 72, 72);
+    color: white;
+    cursor: pointer;
+}

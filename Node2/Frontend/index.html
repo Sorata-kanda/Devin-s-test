@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and post request</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Get request Form</h3>
+    <form action="http://localhost:3000/register" method="get">
+        <input type="text" placeholder="enter username" name="user">
+        <input type="password" placeholder="enter password" name="password">
+        <button>Submit</button>
+    </form>
+    
+    <hr>
+    <h3>POST request form</h3>
+    <form action="http://localhost:3000/register" method="post">
+        <input type="text" placeholder="enter username" name="user">
+        <input type="password" placeholder="enter password" name="password">
+        <button>Submit</button>
+    </form>
+    <p>After this form a js that is app.js will get connected to this. That's a standalone js and Oops is discussed in it.</p>
+</body>
+</html>

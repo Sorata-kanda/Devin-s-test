@@ -1,0 +1,26 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+}
+body{
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+button{
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: #0d6efd;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 7px;
+    color: white;
+}
+input{
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+input:focus {
+  border-color: #0066cc;
+}
