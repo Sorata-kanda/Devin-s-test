@@ -66,3 +66,17 @@ logs/
 *.log
 tmp/
 temp/
+
+# ========================
+# Datasets (large/sensitive CSVs)
+# ========================
+# Uncomment the lines below if you don't want CSV data files on GitHub
+# *.csv
+
+# ========================
+# Extra Folders
+# ========================
+Class Bot/
+Class Bot 2/
+Class_Bot3/
+

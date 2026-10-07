@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Creation</title>
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="main">
+        <h1>Create Account</h1>
+    <form method="post" action="/user/<%=ranId%> ">
+        <div class="main2">
+            <div class="selectedId">
+                <h3 id="random">Id: <%= ranId%> </h3>
+            </div>
+            <div class="user">
+                <h4>Select username: </h4>
+                <input type="text" name="username" id="">
+            </div>
+            
+            <div class="pass">
+                 <h4>Select Password: </h4>
+                <input type="password" name="password" id="">
+            </div>
+           
+            <div class="mail">
+                <h4>Choose email: &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                <input type="text" name="email" id="">
+            </div>
+            
+            <button>Save</button>
+        </div>
+        
+    </form>
+    </div>
+    
+</body>
+</html>

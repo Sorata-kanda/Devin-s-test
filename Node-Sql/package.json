@@ -1,0 +1,25 @@
+{
+  "name": "node-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "dotenv": "^18.0.5",
+    "ejs": "^7.0.1",
+    "express": "^5.2.1",
+    "i": "^0.3.7",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.24.5",
+    "npm": "^11.21.0",
+    "path": "^0.12.7",
+    "uuid": "^14.0.2"
+  }
+}

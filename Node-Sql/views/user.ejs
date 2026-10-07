@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>User data:</h1>
+        <p>
+            <form method="get" action="/user/add-user">
+                <button>Create Account</button>
+            </form>
+        </p>
+        <div class="per-person">
+            <table>
+                <th class="head1">ID</th>
+                <th class="head2">Username</th>
+                <th class="head3">email</th>
+                <th >Editor</th>
+                <th>Deletor</th>
+            </table>
+            <% for(res of result){ %>
+                <div class="per">
+                    <table>
+                        <tr>
+                            <td><p class="id"><%=res.id%></p></th>
+                            <td><p class="username"><%=res.username%></p></th>
+                            <td><p class="email"><%=res.email%></p></th>
+                            <td class="editor">
+                                <form method="get" action="/user/<%=res.id%>/edit">
+                                    <button>Edit</button>
+                                </form>
+                            </td>
+                            <td class="deletor">
+                                <form method="get" action="/user/<%=res.id%> <%=res.username%>">
+                                    <button class="deletor-btn">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            <% } %>  
+        </div>
+    </div>
+</body>
+</html>

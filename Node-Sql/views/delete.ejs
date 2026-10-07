@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion</title>
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+<body>
+    <div class="main">
+        <form method="post" action="/user?_method=DELETE">
+             <input type="hidden" name="id" value="<%= id %>">
+            <input type="hidden" name="username" value="<%= user %>">
+            <h4>Enter Password</h4>
+            <input type="password" name="passkey" id="">
+            <button>Confirm Deletion</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Page</title>
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Editor Acess:</h2>
+    </div>
+    
+    <form action="/user/<%= result1.id%>?_method=PATCH" method="post">
+        <div class="set1">
+        <p>ID: <%= result1.id %> </p>
+        </div>
+        <br>
+        <div class="set2">
+            <p>Username: </p>
+            <input type="text" name="username" value="<%=result1.username%>" >
+        </div>
+        <br>
+        <div class="set2">
+            <p>Password: </p>
+            <input type="password" name="password" placeholder="Enter password">
+        </div>
+        <br>
+        <div class="set3">
+            <p>email</p>
+            <input type="text" name="email" value="<%=result1.email%> ">
+        </div>
+        <br>
+        <button>Save</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home page</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <h1>Welcome to the home page</h1>
+        <h2>The count of the users on the server rn : <%= count %></h2>
+        <div class="forms">
+            <form method ="get" action="/user/add-user">
+                <button class="b1">Join us Today!</button>
+            </form>
+            <form method ="get" action="/user">
+                <button class="b2">User Details Here!</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
